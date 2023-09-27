@@ -1,0 +1,250 @@
+/* font-family: 'Oswald', sans-serif;
+font-family: 'Tilt Prism', cursive; */
+
+
+
+/* basic custom css */
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --bg-color: #0aad0a;
+    --text-color: #4ade80;
+    --transition: 0.5s;
+    --shadow: 0 1rem 3rem rgba(0,0,0,0.175) !important;
+}
+.bg-success{
+    background: var(--bg-color) !important;
+}
+.text-primary{
+    color: var(--text-color) !important;
+}
+.btn-success{
+    background: #87d37c !important;
+    color: white;
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+/* navbar css */
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .show>.nav-link {
+    color: white;
+    font-weight: bold;
+    padding: 9px 20px;
+    font-size: 20px;
+    transform: var(--transition);
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+.carousel-indicators [data-bs-target] {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #4ade80;
+   
+}
+.menu-bg{
+    background: #f87171 !important;
+}
+/* slider css */
+.slider-text{
+    padding: 190px 0;
+    text-align: center;
+    color:white;
+}
+.slider-text h1{
+    display: inline-block;
+    border: 3px solid white;
+    padding: 10px 25px;
+}
+
+/* About section css */
+
+.about-icon{
+    font-size: 80px;
+    color: black;
+}
+
+.about-section-logo:hover {
+    color: var(--text-color);
+}
+.about-section-logo a:hover{
+    color: var(--text-color);
+}
+
+/* service section css */
+
+.service-item{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.service-item-overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #000000ab;
+    left: 0;
+    bottom: -100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+.service-link a{
+    height: 45px;
+    width: 50px;
+    border: 1px solid white;
+    color: white;
+    font-size: 25px;
+    align-items: center;
+    border-radius: 50%;
+    text-align: center;
+
+}
+.service-link a:hover{
+   background: #0aad0a;
+   border: 1px solid #0aad0a;
+}
+.service-item:hover .service-item-overlay{
+    bottom: 0;
+
+}
+/* pricing css */
+
+.pricing-card{
+    padding-bottom: 30px;
+    background: #39393a;
+    color: white;
+    border-radius: 10px;
+}
+
+.pricing-top-section{
+    padding-top: 120px;
+    padding-bottom: 60px;
+    
+}
+.card-top {
+        padding: 20px;
+        height: 150px;
+        width: 150px;
+        border: 4px solid white;
+        display: inline-block;
+        justify-content: center;
+        border-radius: 50%;
+        margin-top: 20px;
+        font-family: 'Oswald', sans-serif;
+    
+}
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    list-style: none;
+    padding-left: 0;
+}
+.card-bottom a{
+    background: white;
+    color: black;
+}
+
+.card-feature li {
+    border-bottom: 2px solid white;
+    margin-top: 14px;
+}
+
+.pricing-card:hover {
+    background: #87d37c;
+}
+.pricing-card:hover .card-top{
+    background: white;
+    color: #87d37c;
+}
+
+/* counterarea css */
+.counter-section{
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background: white;
+}
+.counterarea{
+    background: url(img/footer_banner.jpg) no-repeat center center / cover;
+    padding: 120px 100px;
+}
+.counter-item{
+    color: white;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid rgb(209, 206, 206);
+    padding: 10px 15px;
+}
+/* contact css */
+
+.contact-img{
+    font-size: 60px;
+    color: black;
+}
+.contact-img:hover {
+    color: #87d37c;
+}
+.contact-img a:hover{
+    color: #87d37c;
+}
+
+.formsite{
+
+    padding-bottom: 50px;
+}
+.frommessage{
+    margin-top: 70px;
+
+}
+/* map css */
+#map{
+    width: 102%;
+    height: 450px;
+}
+/* bottom footer css */
+.bottom-footer{
+    background: #1e293b;
+    color: white;
+    width: 100%;
+    height: 50px;
+}
+.footer-icons{
+    text-align: center;
+}
+.footer-icon:hover{
+    color: #87d37c;
+}
+/* ScrollTop css */
+.scrollTop {
+    height: 50px;
+    width: 50px;
+    line-height: 50px ;
+    background: #0284c7;
+    border-radius: 50%;
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+    text-align: center;
+    display:none;
+}
+.scrollTop a{
+    font-size: 30px;
+    color: white;  
+}
